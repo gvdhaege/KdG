@@ -33,4 +33,13 @@ public class Dobbelen {
         System.out.println("Gemiddelde: " + gemiddelde);
 
     }
+
+
+    /*
+
+
+
+     */
+
+    <!-- -->
 }
