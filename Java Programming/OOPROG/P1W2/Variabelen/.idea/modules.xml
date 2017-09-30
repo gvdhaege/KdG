@@ -4,9 +4,11 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Belasting/Belasting.iml" filepath="$PROJECT_DIR$/Belasting/Belasting.iml" />
       <module fileurl="file://$PROJECT_DIR$/Cijfers/Cijfers.iml" filepath="$PROJECT_DIR$/Cijfers/Cijfers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Cijfers2/Cijfers2.iml" filepath="$PROJECT_DIR$/Cijfers2/Cijfers2.iml" />
       <module fileurl="file://$PROJECT_DIR$/Getallen/Getallen.iml" filepath="$PROJECT_DIR$/Getallen/Getallen.iml" />
       <module fileurl="file://$PROJECT_DIR$/Getallen2/Getallen2.iml" filepath="$PROJECT_DIR$/Getallen2/Getallen2.iml" />
       <module fileurl="file://$PROJECT_DIR$/Pizza/Pizza.iml" filepath="$PROJECT_DIR$/Pizza/Pizza.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Tellers/Tellers.iml" filepath="$PROJECT_DIR$/Tellers/Tellers.iml" />
       <module fileurl="file://$PROJECT_DIR$/Variabelen.iml" filepath="$PROJECT_DIR$/Variabelen.iml" />
       <module fileurl="file://$PROJECT_DIR$/Verbruik/Verbruik.iml" filepath="$PROJECT_DIR$/Verbruik/Verbruik.iml" />
     </modules>
