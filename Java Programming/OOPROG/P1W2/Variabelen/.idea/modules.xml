@@ -2,15 +2,21 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/ASCISOM/ASCISOM.iml" filepath="$PROJECT_DIR$/ASCISOM/ASCISOM.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ASCITabel/ASCITabel.iml" filepath="$PROJECT_DIR$/ASCITabel/ASCITabel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ASCIWaarden/ASCIWaarden.iml" filepath="$PROJECT_DIR$/ASCIWaarden/ASCIWaarden.iml" />
       <module fileurl="file://$PROJECT_DIR$/Belasting/Belasting.iml" filepath="$PROJECT_DIR$/Belasting/Belasting.iml" />
       <module fileurl="file://$PROJECT_DIR$/Cijfers/Cijfers.iml" filepath="$PROJECT_DIR$/Cijfers/Cijfers.iml" />
       <module fileurl="file://$PROJECT_DIR$/Cijfers2/Cijfers2.iml" filepath="$PROJECT_DIR$/Cijfers2/Cijfers2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Codering/Codering.iml" filepath="$PROJECT_DIR$/Codering/Codering.iml" />
       <module fileurl="file://$PROJECT_DIR$/Getallen/Getallen.iml" filepath="$PROJECT_DIR$/Getallen/Getallen.iml" />
       <module fileurl="file://$PROJECT_DIR$/Getallen2/Getallen2.iml" filepath="$PROJECT_DIR$/Getallen2/Getallen2.iml" />
       <module fileurl="file://$PROJECT_DIR$/Pizza/Pizza.iml" filepath="$PROJECT_DIR$/Pizza/Pizza.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Schakelaars/Schakelaars.iml" filepath="$PROJECT_DIR$/Schakelaars/Schakelaars.iml" />
       <module fileurl="file://$PROJECT_DIR$/Tellers/Tellers.iml" filepath="$PROJECT_DIR$/Tellers/Tellers.iml" />
       <module fileurl="file://$PROJECT_DIR$/Variabelen.iml" filepath="$PROJECT_DIR$/Variabelen.iml" />
       <module fileurl="file://$PROJECT_DIR$/Verbruik/Verbruik.iml" filepath="$PROJECT_DIR$/Verbruik/Verbruik.iml" />
+      <module fileurl="file://$PROJECT_DIR$/VerhaspelNaam/VerhaspelNaam.iml" filepath="$PROJECT_DIR$/VerhaspelNaam/VerhaspelNaam.iml" />
     </modules>
   </component>
 </project>
