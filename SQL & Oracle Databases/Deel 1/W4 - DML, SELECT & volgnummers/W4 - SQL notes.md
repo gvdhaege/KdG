@@ -188,6 +188,6 @@ naam sequence.CURRVAL => laatst opgehaalde volgnummer opnieuw gebruiken
 wijzigen van een sequence: ALTER SEQUENCE seq_ordnr NOMAXVALUE;
 verwijderen van een sequence: DROP SEQUENCE seq_ordnr; gegeneerde volgnummers blijven daarbij wel behouden!
 
-Select seq_afd_nr.nextval from dual;
+Select seq_afd_nr.nextval from dual; => laatst gebruikt volgnummer zoeken (currval kan ook)
 
 

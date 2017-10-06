@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Basis/Basis.iml" filepath="$PROJECT_DIR$/../Basis/Basis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Basis/Deelbaar/Deelbaar.iml" filepath="$PROJECT_DIR$/../Basis/Deelbaar/Deelbaar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Expressies.iml" filepath="$PROJECT_DIR$/Expressies.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Basis/Faculteit/Faculteit.iml" filepath="$PROJECT_DIR$/../Basis/Faculteit/Faculteit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Basis/GetallenRooster/GetallenRooster.iml" filepath="$PROJECT_DIR$/../Basis/GetallenRooster/GetallenRooster.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Basis/Kader/Kader.iml" filepath="$PROJECT_DIR$/../Basis/Kader/Kader.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Basis/Maanden/Maanden.iml" filepath="$PROJECT_DIR$/../Basis/Maanden/Maanden.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Basis/Machten/Machten.iml" filepath="$PROJECT_DIR$/../Basis/Machten/Machten.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Basis/Reeksen/Reeksen.iml" filepath="$PROJECT_DIR$/../Basis/Reeksen/Reeksen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Basis/Veelvouden/Veelvouden.iml" filepath="$PROJECT_DIR$/../Basis/Veelvouden/Veelvouden.iml" />
+    </modules>
+  </component>
+</project>
