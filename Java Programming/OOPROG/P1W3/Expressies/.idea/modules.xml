@@ -7,7 +7,10 @@
       <module fileurl="file://$PROJECT_DIR$/Expressies.iml" filepath="$PROJECT_DIR$/Expressies.iml" />
       <module fileurl="file://$PROJECT_DIR$/../Basis/Faculteit/Faculteit.iml" filepath="$PROJECT_DIR$/../Basis/Faculteit/Faculteit.iml" />
       <module fileurl="file://$PROJECT_DIR$/../Basis/GetallenRooster/GetallenRooster.iml" filepath="$PROJECT_DIR$/../Basis/GetallenRooster/GetallenRooster.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Basis/HexToLong/HexToLong.iml" filepath="$PROJECT_DIR$/../Basis/HexToLong/HexToLong.iml" />
       <module fileurl="file://$PROJECT_DIR$/../Basis/Kader/Kader.iml" filepath="$PROJECT_DIR$/../Basis/Kader/Kader.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Basis/Kerstboom/Kerstboom.iml" filepath="$PROJECT_DIR$/../Basis/Kerstboom/Kerstboom.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Basis/LongTohex/LongTohex.iml" filepath="$PROJECT_DIR$/../Basis/LongTohex/LongTohex.iml" />
       <module fileurl="file://$PROJECT_DIR$/../Basis/Maanden/Maanden.iml" filepath="$PROJECT_DIR$/../Basis/Maanden/Maanden.iml" />
       <module fileurl="file://$PROJECT_DIR$/../Basis/Machten/Machten.iml" filepath="$PROJECT_DIR$/../Basis/Machten/Machten.iml" />
       <module fileurl="file://$PROJECT_DIR$/../Basis/Reeksen/Reeksen.iml" filepath="$PROJECT_DIR$/../Basis/Reeksen/Reeksen.iml" />
