@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Basis/Aangroei/Aangroei.iml" filepath="$PROJECT_DIR$/../Basis/Aangroei/Aangroei.iml" />
       <module fileurl="file://$PROJECT_DIR$/../Basis/Basis.iml" filepath="$PROJECT_DIR$/../Basis/Basis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Basis/Dagen/Dagen.iml" filepath="$PROJECT_DIR$/../Basis/Dagen/Dagen.iml" />
       <module fileurl="file://$PROJECT_DIR$/../Basis/Deelbaar/Deelbaar.iml" filepath="$PROJECT_DIR$/../Basis/Deelbaar/Deelbaar.iml" />
       <module fileurl="file://$PROJECT_DIR$/Expressies.iml" filepath="$PROJECT_DIR$/Expressies.iml" />
       <module fileurl="file://$PROJECT_DIR$/../Basis/Faculteit/Faculteit.iml" filepath="$PROJECT_DIR$/../Basis/Faculteit/Faculteit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Basis/Getallen/Getallen.iml" filepath="$PROJECT_DIR$/../Basis/Getallen/Getallen.iml" />
       <module fileurl="file://$PROJECT_DIR$/../Basis/GetallenRooster/GetallenRooster.iml" filepath="$PROJECT_DIR$/../Basis/GetallenRooster/GetallenRooster.iml" />
       <module fileurl="file://$PROJECT_DIR$/../Basis/HexToLong/HexToLong.iml" filepath="$PROJECT_DIR$/../Basis/HexToLong/HexToLong.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Basis/Hexadecimaal/Hexadecimaal.iml" filepath="$PROJECT_DIR$/../Basis/Hexadecimaal/Hexadecimaal.iml" />
       <module fileurl="file://$PROJECT_DIR$/../Basis/Kader/Kader.iml" filepath="$PROJECT_DIR$/../Basis/Kader/Kader.iml" />
       <module fileurl="file://$PROJECT_DIR$/../Basis/Kerstboom/Kerstboom.iml" filepath="$PROJECT_DIR$/../Basis/Kerstboom/Kerstboom.iml" />
       <module fileurl="file://$PROJECT_DIR$/../Basis/LongTohex/LongTohex.iml" filepath="$PROJECT_DIR$/../Basis/LongTohex/LongTohex.iml" />
