@@ -1,4 +1,6 @@
-import java.util.Random;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 import java.util.Scanner;
 
 /**
@@ -9,24 +11,45 @@ public class StringBuilderShizzle {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-        Random random = new Random();
-        System.out.println("Geef voornaam en achternaam in:");
+        System.out.print("Geef voornaam en achternaam in: ");
         String tekst = scanner.nextLine();
 
-        StringBuilder builderEen = new StringBuilder(tekst);
-//        builderEen.;
-        System.out.println(builderEen);
+        StringBuilder builderEen = new StringBuilder();
+        builderEen.append(tekst.charAt(0));
+        builderEen.append('.');
+        for (int i = 0; i < tekst.length(); i++) {
+            if (tekst.charAt(i) == ' ') {
+                builderEen.append(tekst.charAt(i + 1));
+                builderEen.append('.');
+            }
+        }
 
         StringBuilder builderTwee = new StringBuilder(tekst);
         builderTwee.reverse();
-        System.out.println(builderTwee);
 
         StringBuilder builderDrie = new StringBuilder(tekst);
-//        builderDrie.r
+        for (int i = 0; i < tekst.length(); i++) {
+            if (tekst.charAt(i) == 'e') {
+                builderDrie.setCharAt(i, 'a');
+            }
+        }
+
+        StringBuilder builderVier = new StringBuilder();
+        List<Character> letters = new ArrayList<>();
+        for (char letter : tekst.toCharArray()) {
+            letters.add(letter);
+        }
+        Collections.shuffle(letters);
+
+        for (char letter : letters){
+            builderVier.append(letter);
+        }
+
+
+
+        System.out.println(builderEen);
+        System.out.println(builderTwee);
         System.out.println(builderDrie);
-
-        StringBuilder builderVier = new StringBuilder(tekst);
-
         System.out.println(builderVier);
     }
 }

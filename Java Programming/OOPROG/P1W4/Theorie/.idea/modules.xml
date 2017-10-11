@@ -2,7 +2,25 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Dagen/Dagen.iml" filepath="$PROJECT_DIR$/Dagen/Dagen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Datum/Datum.iml" filepath="$PROJECT_DIR$/Datum/Datum.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Klinkers/Klinkers.iml" filepath="$PROJECT_DIR$/Klinkers/Klinkers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Palindroom/Palindroom.iml" filepath="$PROJECT_DIR$/Palindroom/Palindroom.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Persoon/Persoon.iml" filepath="$PROJECT_DIR$/Persoon/Persoon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Random/Random.iml" filepath="$PROJECT_DIR$/Random/Random.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Random2/Random2.iml" filepath="$PROJECT_DIR$/Random2/Random2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/String/String.iml" filepath="$PROJECT_DIR$/String/String.iml" />
+      <module fileurl="file://$PROJECT_DIR$/StringBuilderDemo/StringBuilderDemo.iml" filepath="$PROJECT_DIR$/StringBuilderDemo/StringBuilderDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/StringsVergelijken/StringsVergelijken.iml" filepath="$PROJECT_DIR$/StringsVergelijken/StringsVergelijken.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Substring/Substring.iml" filepath="$PROJECT_DIR$/Substring/Substring.iml" />
       <module fileurl="file://$PROJECT_DIR$/Theorie.iml" filepath="$PROJECT_DIR$/Theorie.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Vat/Vat.iml" filepath="$PROJECT_DIR$/Vat/Vat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Veelhoek/Veelhoek.iml" filepath="$PROJECT_DIR$/Veelhoek/Veelhoek.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Verdeling/Verdeling.iml" filepath="$PROJECT_DIR$/Verdeling/Verdeling.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Verdeling/VerdelingDemo.iml" filepath="$PROJECT_DIR$/Verdeling/VerdelingDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Verkeersbelasting/Verkeersbelasting.iml" filepath="$PROJECT_DIR$/Verkeersbelasting/Verkeersbelasting.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Woord/Woord.iml" filepath="$PROJECT_DIR$/Woord/Woord.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WoordenString/WoordenString.iml" filepath="$PROJECT_DIR$/WoordenString/WoordenString.iml" />
     </modules>
   </component>
 </project>

@@ -115,4 +115,27 @@ Daardoor sneller en zuiniger met geheugenruimte als er veel aan een string moet 
 Enkel te maken met constructor:
 StringBuilder emptyBuilder = new StringBuilder();
 StringBuilder emptyBuilder = new StringBuilder("For shizzel");
-p49
+
+
+#### gegevens formatteren
+
+System.out.printf("%d appels kosten €%.2f.\n", aantal, prijs);
+hetzelfde als String:
+String str : String.format("%d appels kosten €%.2f.\n", aantal, prijs);
+
+%d = int/long (geheel getal)
+%f = float.double (decimaal getal)
+%s = string
+%c = char
+%b = boolean
+%n = newline, beter dan \n ! (platform onafhankelijk)
+
+extra aanduidingen 
+n = totaal min aantal posities (%20s)
+- = links uitlijnen (%-20s)
+n.d geeft bij %f het totaal aantal posities en het aantal decimalen met automatische afronding (%6.2f)
+
+(!) voor elke formaataanduidig moet er met het type overeenstemmende variabele of literal aanwezig zijn
+
+System.out.printf("De %dde letter is %d\n", 5, 'e'); // de 5de letter is e
+
