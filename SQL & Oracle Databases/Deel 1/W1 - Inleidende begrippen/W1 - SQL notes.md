@@ -9,14 +9,17 @@ connect system/root
 	
 		**NADELEN:**
 		* **Redundantie:** meerdere afdelingen van een organisatie hebben dezelfde gegevens in eigen bestanden => gevaar voor inconsistentie, inefficiënt geheugengebruik en updates moeten op verschillende plaatsen doorgevoerd worden.
+
 		* **Gescheiden geïsoleerde data:** vraagt een vrij complexe programmatie om verschillende bestanden in een programma te synchroniseren om een antwoord op een vraag te vinden.
 		* **Data afhankelijkheid:** een wijziging doorvoeren in de structuur, betekent een programmatorische aanpassing.
+
 		* **Incompatibele bestanden:** mogelijks geprogrammeerde met andere programmeertalen (andere bestandssctructuur).
 
 	* **Databasegerichte benadering** = alle informatie wordt in een database beheerd dewelke door meerdere afdelingen simultaan gebruikt kan worden, verdeeld over verschillende groepen (entiteiten) dewelke de "objecten" van de DB vormen.
 	
 		**VOORDELEN:**
 		* **Shared data:** alle applicaties kunnen gebruik maken van de gegevens uit de DB; simultaan lezen, voor aanpassingen dienen ze wel rekening te houden met elkaar.
+
 		* **Geïntegreerd en samenhangend:** alle gegevens zitten gecentraliseerd en gerelateerd (Applicatie > DBMS > OS > DBMS > Applicatie)
 		* **Geringe redundantie:** gegevens zitten niet meer dubbel gestockeerd.
 		* **Data onafhankelijkheid:** de gegevens worden in de DB beschreven en niet in de applicatie. Een structuurwijziging van een DB object vraagt geen programmatorische aanpassing.
@@ -41,6 +44,8 @@ Belangrijke gebruikersprofielen:
 * de database administrator
 * toepassingsontwikkelaar
 * eindgebruiker
+
+
 
 ###### Het relationele model
 _____
@@ -67,6 +72,8 @@ Terminologie:
 * **Primaire sleutels** = attribuut of combinatie van attributie dewelke een rij uit een tabel op een unieke wijze gaat identificeren.
 * **Alternatieve sleutels** = meerdere attributen (of combinaties van) zijn mogelijk primaire sleutels, zowel alternatieve om kandidaatsleutels genoemd.
 * **Vreemde sleutels** = verband tussen twee tabellen, verwijzing naar een primaire sleutel (of unieke attribuutcombinatie) van een andere tabel.
+
+___________SAMENVATTING!!!
 
 Integreteitsregels opgelegd door het relationele model:
 
