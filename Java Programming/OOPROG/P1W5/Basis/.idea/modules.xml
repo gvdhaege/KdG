@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AsciiWaarden/AsciiWaarden.iml" filepath="$PROJECT_DIR$/AsciiWaarden/AsciiWaarden.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Basis.iml" filepath="$PROJECT_DIR$/Basis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Extra/Extra.iml" filepath="$PROJECT_DIR$/../Extra/Extra.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Frequenties/Frequenties.iml" filepath="$PROJECT_DIR$/Frequenties/Frequenties.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Gemiddelde/Gemiddelde.iml" filepath="$PROJECT_DIR$/Gemiddelde/Gemiddelde.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hashcode/Hashcode.iml" filepath="$PROJECT_DIR$/Hashcode/Hashcode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Kwadraten/Kwadraten.iml" filepath="$PROJECT_DIR$/Kwadraten/Kwadraten.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LettersTellen/LettersTellen.iml" filepath="$PROJECT_DIR$/LettersTellen/LettersTellen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MatrixSom/MatrixSom.iml" filepath="$PROJECT_DIR$/MatrixSom/MatrixSom.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Extra/MusicMachine/MusicMachine.iml" filepath="$PROJECT_DIR$/../Extra/MusicMachine/MusicMachine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Pascal/Pascal.iml" filepath="$PROJECT_DIR$/Pascal/Pascal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Scrabble/Scrabble.iml" filepath="$PROJECT_DIR$/Scrabble/Scrabble.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpeelKaarten/SpeelKaarten.iml" filepath="$PROJECT_DIR$/SpeelKaarten/SpeelKaarten.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SplitsString/SplitsString.iml" filepath="$PROJECT_DIR$/SplitsString/SplitsString.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SplitsTabel/SplitsTabel.iml" filepath="$PROJECT_DIR$/SplitsTabel/SplitsTabel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/StaafDiagram/StaafDiagram.iml" filepath="$PROJECT_DIR$/StaafDiagram/StaafDiagram.iml" />
+      <module fileurl="file://$PROJECT_DIR$/StringArray/StringArray.iml" filepath="$PROJECT_DIR$/StringArray/StringArray.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Temperaturen/Temperaturen.iml" filepath="$PROJECT_DIR$/Temperaturen/Temperaturen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Weekdagen/Weekdagen.iml" filepath="$PROJECT_DIR$/Weekdagen/Weekdagen.iml" />
+    </modules>
+  </component>
+</project>
