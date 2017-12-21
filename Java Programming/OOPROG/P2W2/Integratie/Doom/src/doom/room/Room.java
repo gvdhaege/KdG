@@ -50,15 +50,23 @@ public class Room {
     }
 
     public void update() {
+        movePlayer();
+        for (Monster monster : monsters) {
+            moveMonster(monster);
+        }
+    }
+
+    private void movePlayer() {
         floorPlan[player.getX()][player.getY()] = ' ';
         player.move();
         floorPlan[player.getX()][player.getY()] = player.toString().charAt(0);
-        for (Monster monster : monsters) {
-            floorPlan[monster.getX()][monster.getY()] = ' ';
-            monster.move();
-            floorPlan[monster.getX()][monster.getY()] = monster.toString().charAt(0);
-            monster.attackPlayer();
-        }
+    }
+
+    private void moveMonster(Monster monster) {
+        floorPlan[monster.getX()][monster.getY()] = ' ';
+        monster.move();
+        floorPlan[monster.getX()][monster.getY()] = monster.toString().charAt(0);
+        monster.attackPlayer();
     }
 
     public boolean isFinished() {
