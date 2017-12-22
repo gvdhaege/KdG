@@ -1,6 +1,6 @@
 package doom.room;
 
-import doom.character.Monster;
+import doom.monster.Monster;
 import doom.character.Player;
 
 public class Room {

@@ -1,6 +1,9 @@
-package doom.character;
+package doom.monster;
 
-public class Monster extends DoomCharacter {
+import doom.character.DoomCharacter;
+import doom.character.Player;
+
+public abstract class Monster extends DoomCharacter {
     public static final int STRENGTH = 1;
     private Player player;
 
@@ -9,12 +12,7 @@ public class Monster extends DoomCharacter {
         this.player = player;
     }
 
-    public void attackPlayer() {
-        if (Math.abs(getPlayer().getX() - x) <= 1
-                && Math.abs(getPlayer().getY() - y) <= 1) {
-            getPlayer().attack(STRENGTH);
-        }
-    }
+    public abstract void attackPlayer();
 
     public Player getPlayer() {
         return player;

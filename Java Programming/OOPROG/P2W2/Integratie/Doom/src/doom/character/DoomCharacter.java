@@ -7,7 +7,7 @@ import java.util.Random;
 public abstract class DoomCharacter {
     protected int x;
     protected int y;
-    private Random random;
+    public Random random;
     private Room room;
 
     public DoomCharacter(int x, int y) {
@@ -35,5 +35,9 @@ public abstract class DoomCharacter {
 
     public void setRoom(Room room) {
         this.room = room;
+    }
+
+    public Room getRoom() {
+        return room;
     }
 }
