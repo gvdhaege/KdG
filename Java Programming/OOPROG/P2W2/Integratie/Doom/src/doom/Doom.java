@@ -1,6 +1,7 @@
 package doom;
 
 import doom.character.Player;
+import doom.config.TextColor;
 import doom.monster.*;
 import doom.room.Room;
 
@@ -14,9 +15,11 @@ import java.util.Random;
 public class Doom {
     public static final int AMOUNT_OF_MONSTERS = 20;
     private Room room;
+    private Player player;
+
 
     public Doom() {
-        Player player = new Player(Room.WIDTH / 2, Room.HEIGHT / 2);
+        player = new Player(Room.WIDTH / 2, Room.HEIGHT / 2);
         Monster[] monsters = new Monster[AMOUNT_OF_MONSTERS];
         Random random = new Random();
         for (int i = 0; i < AMOUNT_OF_MONSTERS; i++) {
@@ -50,7 +53,7 @@ public class Doom {
         while (!isFinished()) {
             room.update();
             room.draw();
-            showInfo();
+            showHUD();
             try {
                 Thread.sleep(500);
             } catch (InterruptedException e) {
@@ -63,7 +66,7 @@ public class Doom {
         System.out.println(" seconds...");
     }
 
-    public void showInfo() {
+    public void showHUD() {
         LocalDate localDate = LocalDate.now();
         LocalTime localTime = LocalTime.now();
         System.out.print(localDate.format(DateTimeFormatter.ofPattern("dd MMM yyyy")));
@@ -71,5 +74,8 @@ public class Doom {
         System.out.print(localTime.format(DateTimeFormatter.ofPattern("HH:mm:ss")));
         for (int j = 0; j < Room.WIDTH - 13; j++) System.out.print(" ");
         System.out.printf("Health:%3.0f\n", room.getPlayer().getHealth());
+        if (player.isDeath()){
+            System.out.print(TextColor.ANSI_RED.getValue() + "I'm death! Aaarrrrgh... \t\t" + TextColor.ANSI_RESET.getValue());
+        }
     }
 }

@@ -6,3 +6,8 @@ public class Main {
         doom.start();
     }
 }
+
+//    TODO extra monster?
+//    TODO menu: 1)settings, 2) start, 3) exit
+//    TODO menu: setting grootte, aantal monsters, updatesnelheid
+//    TODO extra muren? doolhof?

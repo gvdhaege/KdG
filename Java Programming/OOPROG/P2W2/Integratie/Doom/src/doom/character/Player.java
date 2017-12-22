@@ -12,8 +12,6 @@ public class Player extends DoomCharacter {
         health -= damage;
         if (health <= 0) {
             health = 0;
-            System.out.println("I'm death");
-            System.out.println("Aaarrrrgh...");
         }
     }
 
