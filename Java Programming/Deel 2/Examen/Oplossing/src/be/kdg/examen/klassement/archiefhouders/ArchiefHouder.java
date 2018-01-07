@@ -2,18 +2,21 @@ package be.kdg.examen.klassement.archiefhouders;
 
 import be.kdg.examen.klassement.archiefstukken.Archiefstuk;
 
+// gegeven, mag je wijzigen
 public interface ArchiefHouder {
+
+    // gegeven
     enum Soort {
-        DoosType, KokerType
+        DoosType, KokerType;
     }
 
-    default double vullingsGraad() {
-        return 1.0;
-    }
-
+    // niet-gegeven
     void stockeer(Archiefstuk archiefstuk);
 
-    double getMaxVolume();
+    default double vullingsGraad() {return 1.0;}
+
+    double getVolume();
 
     boolean isVol();
+
 }

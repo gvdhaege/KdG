@@ -1,0 +1,169 @@
+************************************************************************************************************************
+Doel van de vragen
+************************************************************************************************************************
+
+Deze vragen peilen naar de kennis en inzicht rond het gebruik van:
+
+0) principle of least privilege
+1) het begrip overerving
+2) het begrip constructor / super constructor
+3) het begrip "Abstracte klasse" en abstract method
+4) het begrip "Interface" en implementaties
+5) het begrip polymorfisme, instanceof, downcasting
+6) de java 8 DateTime API
+7) Collecties: List en Map
+8) Enums
+9) Exceptions: zelf geschreven RuntimeException, try-catch / throw
+10) Sorteren m.b.v. Comparable
+11) Gebruik final voor attributen en klassen
+12) De opgave toest ook hoe goed de student deze kennis kan integreren tot een werkend geheel = belangrijke competentie
+
+************************************************************************************************************************
+Hier begint de opgave
+************************************************************************************************************************
+Grondig lezen en herlezen
+
+In deze opgave ga je een slim digitaal archief maken. Een digitaal archief beschikt bevat een aantal vooropgestelde
+kartonnen dozen en kokers, tesamen noemen we deze archiefhouders.
+
+Nieuwe archiefstukken worden door het archief automatisch in de juiste archiefhouders gestockeerd: boeken en video's
+gaan in dozen en kaarten worden bewaard in ronde kokers
+
+Bestaande code mag je NIET wijzigen, tenzij er vermeld staat "hier aanvullen/wijzigen", "mag je wijzigen"
+
+Wanneer de main methode van TestArchief volgende console-output geeft, is je oplossing correct.
+
+            be.kdg.examen.klassement.exceptions.ArchiveringsException: Archief: geen kokers meer beschikbaar
+            Inhoud archief:
+            Aantal gebruikte dozen: 95
+            Aantal gebruikte kokers: 100
+            boek (2016-12-07 09:50:55,   20p, 0.01m³)
+            boek (2016-12-07 09:50:55,   25p, 0.01m³)
+            boek (2016-12-07 09:50:55,   42p, 0.02m³)
+            boek (2016-12-07 09:50:55,   44p, 0.02m³)
+            // deel weggelaten
+            boek (2016-12-07 09:50:55,  948p, 0.35m³)
+            boek (2016-12-07 09:50:55,  949p, 0.35m³)
+            boek (2016-12-07 09:50:55,  968p, 0.35m³)
+            boek (2016-12-07 09:50:55,  979p, 0.36m³)
+            boek (2016-12-07 09:50:55,  993p, 0.36m³)
+            boek (2016-12-07 09:50:55,  997p, 0.36m³)
+            boek (2016-12-07 09:50:55, 1000p, 0.37m³)
+            boek (2016-12-07 09:50:55, 1009p, 0.37m³)
+
+Merk op: de hoeveelheid gebruikte dozen kan in jouw output verschillen evenals het aantal blz, ...
+
+De volgende vragen leiden naar de oplossing van dit probleem. Lees elke vraag grondig, want ze bevatten hints.
+Denk grondig na en gebruikt autocompletion van IntellIJ zoveel als mogelijk.
+Probeer verder op elke vraag een antwoord te geven. Elk punt telt, zelfs als het geheel niet werkt.
+
+ARCHIEFHOUDERS
+Vraag 1a)
+Het archief kent slechts twee type archiefhouders (type: Doos en Koker). Voeg de gepaste Java constructie in de interface
+ArchiefHouder toe om.
+
+Een Archiefhouder (een doos of koker) voldoet aan een aantal eigenschappen/functionaliteiten:
+    *) ze hebben een maximaal inhoudsvolume
+    *) ze hebben een huidige vullingsgraad (= percentage van maximaal inhoudsvolume)
+    *) we kunnen controleren of vol zijn
+    *) ze kunnen één of meerdere archiefstukken stockeren
+
+Schrijf de nodige code om bovenstaande functionaliteit toe te voegen. Doe dit in de interface Archiefhouder
+
+DOZEN en KOKERS
+Vraag 1b)
+Dozen en kokers moet voldoen aan de voorwaarden uit vraag 2a en daarom kent/weet een doos/koker
+    *) zijn maximaal inhoudsvolume
+    *) zijn huidige vullingsgraad
+    *) of ze al dan niet vol is
+    *) kan ze een nieuw archiefstuk automatisch stockeren.
+
+De dozen van het archief hebben allen dezelfde afmeting (lengte: 0.305m, breedte: 0.215m, hoogte = 0.110m).
+Een doos is vol wanneer zij een vullingsgraad heeft van meer dan 95% (maximum 100%).
+Een doos stockeert de boeken en videobanden in een lijst. Er kunnen dus meer boeken en video's in.
+Het volume van de boeken en video's bepaalt de vullingsgraad van de doos.
+
+Een koker van het archief heeft steeds dezelfde afmeting (hoogte : 0.450m, straal: 0.25m)
+In een koker kan slechts een kaart gestockeerd worden.
+De vullingsgraad is steeds 1. Hier is een zeer elegante oplossing voor in een archiefhouder.
+
+Vraag 1c)
+Een doos heeft een extra methode: public List<Archiefstuk> getBoeken().
+Deze geeft een lijst terug met daarin enkel de boeken in de doos.
+
+
+ARCHIEFSTUKKEN
+Vraag 2a)
+Vervolledig de code zodat drie typen archiefstukken kunnen aangemaakt worden met hun eigenschappen:
+    1) Boek:        huidig moment als archiveringsdatum, een random aantal pagina's tussen 10 en 1009
+    2) Videoband:   huidig moment als archiveringsdatum, elke videoband heeft volgende afmetingen lengte:0.187, breedte:0.103, hoogte: 0.025
+    3) Kaart:       huidig moment als archiveringsdatum
+
+Plaats jouw gemaakte klassen in de package "archiefstukken" en zorg ervoor dat ze niet verder uitgebreid kunnen worden.
+
+Vraag 2b)
+Vervolledig de klassen Archiefstuk, Boek, Videoband en Kaart volgens de volgende vereisten:
+Aan elk archiefstuk kan gevraagd worden in welke type ArchiefHouder het thuis hoort.
+
+Verder heeft elk archiefstuk een volume en kan hier op gesorteerd worden met andere archiefstukken
+    1) Het volume van een boek wordt bepaald door tweemaal kaftdikte en dikte van het aantal pagina's.
+    2) Het volume van een video wordt bepaald door zijn afmetingen.
+    3) Het volume van een kaart wordt per definitie gelijkgesteld aan 0.
+
+Kijk ook goed na welke eigenschappen van bovenstaande klassen niet meer aangepast mogen worden en dwing dit af.
+
+
+ARCHIEF
+Opgelet: dit is het moeilijkste deel van de opgave.
+
+Vraag 3a)
+
+Het archief houdt voor beide archiefhouder types (Doos en Koker) een lijst bij. Dus voor elke type is er een lijst.
+Zorg ervoor dat deze beide lijsten opvraagbaar zijn via hun type. Tip: sleutel - waarde.
+
+Vraag 3b)
+Wanneer een archief aangemaakt wordt, worden ook 200 lege dozen en 100 lege kokers in het archief aangemaakt op basis van
+twee parameters: aantalDozen (=200) en aantalKokers (=100).
+Schrijf hiervoor een gepaste methode genaamd initialiseerArchief(int aantalDozen, int aantalKokers). Deze methode wordt
+opgeroepen bij de aanmaak van een nieuw archief.
+
+Vraag 3c)
+Het archief kan een nieuw archiefstuk automatisch stockeren in de juiste houder m.b.v. twee methoden:
+    *) stockeer (2 regeltjes): bepaalt de correcte houder (m.b.v bepaalHouder hieronder) en stockeert het archiefstuk daar in
+    *) bepaalHouder:
+        *)  als het archiefstuk een koker is, geef je gewoon de laatste vrije koker terug. Onthou de laatste vrijekoker m.b.v een getal: kokerIndex.
+        *)  als het archiefstuk geen koker is, controleer je of de laatste gebruikte doos al vol is of niet.
+            Als het archiefstuk de doos niet vol maakt, geef je deze doos terug.
+            Anders neem je de volgende lege doos. Gebruik hiervoor ook een index: doosIndex.
+        *)  Wanneer er geen dozen of kokers meer beschikbaar zijn in het archief ontstaat er een foutmelding (een ArchiveringsException).
+            Gebruik deze in de methode bepaalHouder op de gepaste plaats
+            De foutmelding is anders voor dozen dan voor kokers: "Archief: geen kokers meer beschikbaar" vs "Archief: geen dozen meer beschikbaar"
+
+Vraag 3d)
+Het archief kan alle boeken in de dozen opvragen en sorteren op boekvolume.
+Werk hiervoor de methode public List<Archiefstuk> getSorteerdeBoeken() verder uit.
+Tip 1: overloop alle dozen in het archief en gebruik de methode public List<Archiefstuk> getBoeken() uit vraag 2c.
+Tip 2: addAll
+
+
+OUTPUT
+Hier wordt het terug een beetje makkelijker. Punten sprokkelen dus.
+
+Vraag 4a)
+Voorzie een inner klasse Inventaris in de klasse Archief.
+Instanties hiervan bevatten twee gegevens:
+  1) het aantal gebruikte dozen (gebruikteDozen)
+  2) het aantal gebruikte kokers (gebruikteKokers)
+
+Voorzie nu in de klasse Archief de methode private Inventaris getInventaris() die een Invertaris object aanmaakt met de correct bekerende waarden.
+Tip: gebruik voor de berekening het initieel aantal lege dozen en kokers en de indexen (kokerIndex en doosIndex)
+
+Vraag 4b)
+Implementeer tot slot de toString methode van de klasse Archief.
+Bekijk bovenstaande console output op pagina X.
+Maak verplicht gebruik een StringBuilder object.
+Je hebt volgende methode nodig:
+    *)  List<Archiefstuk> boeken = getSorteerdeBoeken();
+    *)  Inventaris inventaris = getInventaris();
+
+Succes

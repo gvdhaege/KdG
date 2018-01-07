@@ -3,18 +3,13 @@ package be.kdg.examen.klassement.archiefstukken;
 import be.kdg.examen.klassement.archiefhouders.ArchiefHouder;
 
 import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 
 // gegeven, mag je wijzigen
 public final class Kaart extends Archiefstuk {
 
+    // niet-gegeven
     public Kaart() {
         super(LocalDateTime.now());
-    }
-
-    @Override
-    public double getOmvang() {
-        return 0;
     }
 
     @Override
@@ -22,5 +17,8 @@ public final class Kaart extends Archiefstuk {
         return ArchiefHouder.Soort.KokerType;
     }
 
-    // hier aanvullen
+    @Override
+    public double getOmvang() {
+        return 0;
+    }
 }

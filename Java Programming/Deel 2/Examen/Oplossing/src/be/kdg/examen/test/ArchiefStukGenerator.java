@@ -23,8 +23,5 @@ public class ArchiefStukGenerator {
             default:
                 return new Videoband();
         }
-
-        // plaats deze regel in commentaar na vraag 1
-//        return null;
     }
 }
