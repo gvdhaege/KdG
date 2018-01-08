@@ -1,6 +1,5 @@
 package kids;
 
-import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeMap;
 
@@ -16,15 +15,15 @@ public class DemoKind {
 
         System.out.println(kinderen);
 
-        for (String key : kinderen.keySet()){
+        for (String key : kinderen.keySet()) {
             System.out.print(key + " ");
         }
         System.out.println();
-        for (String key : kinderen.keySet()){
+        for (String key : kinderen.keySet()) {
             System.out.print(kinderen.get(key) + " ");
         }
         System.out.println();
-        for(Kind kind : kinderen.values()){
+        for (Kind kind : kinderen.values()) {
             System.out.println(kind);
         }
     }
