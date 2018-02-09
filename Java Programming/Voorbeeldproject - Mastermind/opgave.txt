@@ -1,0 +1,9 @@
+De bedoeling van het spel Mastermind is dat de speler probeert de te zoeken kleurencombinatie te vinden aan de hand van tips.
+De computer bedenkt een combinatie van kleuren. De kleuren die gebruikt kunnen worden zijn: rood, geel, groen en blauw. De combinatie bestaat uit 4 kleuren. Kleuren kunnen meerdere keren (of niet) voorkomen.
+De speler krijgt maximaal 9 pogingen om de kleurencombinatie te raden. Hij doet dit door een gok te wagen. De computer geeft dan een hint. De hint bestaat uit (maximaal 4) zwarte en witte bolletjes. Een wit bolletje wil zeggen: er staat een juiste kleur op de juiste plaats. Een zwart bolletje wil zeggen: de kleur is juist, maar ze staat niet op de juiste plaats.
+Als de speler het antwoord gevonden heeft kan hij eventueel nog eens spelen.
+Via een settings scherm moet het mogelijk zijn een aantal settings aan te passen, zoals de kleuren, de grootte van de combinatie en het maximaal aantal pogingen.
+Er wordt ook een highscore bijgehouden: hoe minder stappen er nodig waren, hoe hoger in de highscorellijst. Per combinatiegrootte moet er een highscorelijst voorzien worden. 
+Extra's:
+- voorzie de mogelijkheid om het spel op te slaan en nadien terug verder te spelen
+- voorzie een statistieken scherm waarop je in een grafiek het aantal zetten toont, en de spelduur.

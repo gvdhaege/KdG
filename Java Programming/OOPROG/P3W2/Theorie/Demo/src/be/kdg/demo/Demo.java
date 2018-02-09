@@ -1,5 +1,6 @@
 package be.kdg.demo;
 
+import be.kdg.demo.view.BorderPaneView;
 import be.kdg.demo.view.GridPaneView5;
 import javafx.application.Application;
 import javafx.scene.Scene;
@@ -16,7 +17,7 @@ public class Demo extends Application {
         //LabelView1 be.kdg.demo.view = new LabelView1();
         //LabelView2 be.kdg.demo.view = new LabelView2();
         //ImageViewView be.kdg.demo.view = new ImageViewView();
-        //BorderPaneView be.kdg.demo.view = new BorderPaneView();
+        BorderPaneView view = new BorderPaneView();
         //VBoxView1 be.kdg.demo.view = new VBoxView1();
         //VBoxView2 be.kdg.demo.view = new VBoxView2();
         //VBoxView3 be.kdg.demo.view = new VBoxView3();
@@ -25,7 +26,7 @@ public class Demo extends Application {
         //GridPaneView2 be.kdg.demo.view = new GridPaneView2();
         //GridPaneView3 be.kdg.demo.view = new GridPaneView3();
         //GridPaneView4 be.kdg.demo.view = new GridPaneView4();
-        GridPaneView5 view = new GridPaneView5();
+//        GridPaneView5 view = new GridPaneView5();
 
         primaryStage.setScene(new Scene(view));
         primaryStage.show();
