@@ -1,0 +1,10 @@
+% Opgave Kruiswoord Raadsel
+% Horizontaal
+% Nummer, Opgave, Oplossing
+1,windstilte,flauwte
+2,misvorming,dysmorfie
+3,raadzaam,geboden
+% Verticaal
+1,brandweer aktie,blussen
+2,zenuwarts,neuroloog
+3,zachte kuisborstel,stoffer
