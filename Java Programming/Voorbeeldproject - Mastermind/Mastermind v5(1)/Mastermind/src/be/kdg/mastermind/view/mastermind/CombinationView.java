@@ -19,8 +19,6 @@ public class CombinationView extends GridPane {
 
     void layoutNodes() {
         for (int kolom = 0;kolom < circles.length; kolom++){
-            circles[kolom] = new Circle(20, DEFAULT_COLOR);
-            add(circles[kolom],kolom,0);
         }
     }
 
