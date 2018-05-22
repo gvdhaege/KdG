@@ -36,5 +36,5 @@ public class Persoon implements Comparable<Persoon> {
         return naam + " " + leeftijd;
     }
 
-    
+
 }
