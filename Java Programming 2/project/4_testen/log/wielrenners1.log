@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-05-23T09:17:15</date>
+  <millis>1527059835783</millis>
+  <sequence>0</sequence>
+  <logger>be.kdg.wielrennen.model.WielRenner</logger>
+  <level>SEVERE</level>
+  <class>be.kdg.wielrennen.model.WielRenner</class>
+  <method>setGewicht</method>
+  <thread>1</thread>
+  <message>Gewicht 180 ligt niet tussen 20 en 150 voor Anoniem Anoniem</message>
+</record>
+</log>

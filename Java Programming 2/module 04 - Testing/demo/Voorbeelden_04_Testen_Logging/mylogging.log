@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2017-10-11T13:05:28</date>
+  <millis>1507719928298</millis>
+  <sequence>0</sequence>
+  <logger>be.kdg.jul.FileDemo</logger>
+  <level>INFO</level>
+  <class>be.kdg.jul.FileDemo</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Information</message>
+</record>
+<record>
+  <date>2017-10-11T13:05:28</date>
+  <millis>1507719928337</millis>
+  <sequence>1</sequence>
+  <logger>be.kdg.jul.FileDemo</logger>
+  <level>WARNING</level>
+  <class>be.kdg.jul.FileDemo</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Warning</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2017-10-11T13:08:14</date>
+  <millis>1507720094559</millis>
+  <sequence>0</sequence>
+  <logger>be.kdg.jul.FileDemo</logger>
+  <level>INFO</level>
+  <class>be.kdg.jul.FileDemo</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Information</message>
+</record>
+<record>
+  <date>2017-10-11T13:08:14</date>
+  <millis>1507720094598</millis>
+  <sequence>1</sequence>
+  <logger>be.kdg.jul.FileDemo</logger>
+  <level>WARNING</level>
+  <class>be.kdg.jul.FileDemo</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Warning</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-05-23T08:15:28</date>
+  <millis>1527056128870</millis>
+  <sequence>0</sequence>
+  <logger>be.kdg.jul.FileDemo</logger>
+  <level>INFO</level>
+  <class>be.kdg.jul.FileDemo</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Information</message>
+</record>
+<record>
+  <date>2018-05-23T08:15:28</date>
+  <millis>1527056128930</millis>
+  <sequence>1</sequence>
+  <logger>be.kdg.jul.FileDemo</logger>
+  <level>WARNING</level>
+  <class>be.kdg.jul.FileDemo</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Warning</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-05-23T08:17:44</date>
+  <millis>1527056264773</millis>
+  <sequence>0</sequence>
+  <logger>be.kdg.jul.FileDemo</logger>
+  <level>INFO</level>
+  <class>be.kdg.jul.FileDemo</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Information</message>
+</record>
+<record>
+  <date>2018-05-23T08:17:44</date>
+  <millis>1527056264811</millis>
+  <sequence>1</sequence>
+  <logger>be.kdg.jul.FileDemo</logger>
+  <level>WARNING</level>
+  <class>be.kdg.jul.FileDemo</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Warning</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-05-23T08:49:59</date>
+  <millis>1527058199347</millis>
+  <sequence>0</sequence>
+  <logger>be.kdg.jul.FileDemo</logger>
+  <level>INFO</level>
+  <class>be.kdg.jul.FileDemo</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Information</message>
+</record>
+<record>
+  <date>2018-05-23T08:49:59</date>
+  <millis>1527058199376</millis>
+  <sequence>1</sequence>
+  <logger>be.kdg.jul.FileDemo</logger>
+  <level>WARNING</level>
+  <class>be.kdg.jul.FileDemo</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Warning</message>
+</record>
+</log>
