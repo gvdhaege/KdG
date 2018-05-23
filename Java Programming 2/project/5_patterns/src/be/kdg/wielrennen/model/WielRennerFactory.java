@@ -63,7 +63,7 @@ public class WielRennerFactory {
     }
 
     private static int genereerLengte(Random random) {
-        return MIN_LENGTE + random.nextInt(MAX_LENGTE - MIN_LENGTE);
+        return MIN_LENGTE + random.nextInt(MAX_LENGTE - MIN_LENGTE + 1);
     }
 
     private static double genereerGewicht(Random random) {
