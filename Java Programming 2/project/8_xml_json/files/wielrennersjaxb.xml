@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<wielRenners>
+    <wielRenners discipline="RACE">
+        <naam>Benoot</naam>
+        <voornaam>Tiesj</voornaam>
+        <nationaliteit>BELG</nationaliteit>
+        <geboorte-datum>1994-03-11</geboorte-datum>
+        <lengte>190</lengte>
+        <gewicht>72.0</gewicht>
+        <ploeg>Lotto Soudal</ploeg>
+    </wielRenners>
+    <wielRenners discipline="RACE">
+        <naam>Wellens</naam>
+        <voornaam>Tim</voornaam>
+        <nationaliteit>BELG</nationaliteit>
+        <geboorte-datum>1991-05-10</geboorte-datum>
+        <lengte>183</lengte>
+        <gewicht>65.0</gewicht>
+        <ploeg>Lotto Soudal</ploeg>
+    </wielRenners>
+    <wielRenners discipline="RACE">
+        <naam>Zdeněk</naam>
+        <voornaam>Štybar</voornaam>
+        <nationaliteit>TJSECHS</nationaliteit>
+        <geboorte-datum>1985-12-11</geboorte-datum>
+        <lengte>183</lengte>
+        <gewicht>78.0</gewicht>
+        <ploeg>Quick-Step Floors</ploeg>
+    </wielRenners>
+    <wielRenners discipline="RACE">
+        <naam>Sagan</naam>
+        <voornaam>Peter</voornaam>
+        <nationaliteit>SLOWAAKS</nationaliteit>
+        <geboorte-datum>1990-01-26</geboorte-datum>
+        <lengte>184</lengte>
+        <gewicht>73.0</gewicht>
+        <ploeg>BORA - Hansgrohe</ploeg>
+    </wielRenners>
+    <wielRenners discipline="CYCLOCROSS">
+        <naam>Van Aert</naam>
+        <voornaam>Wout</voornaam>
+        <nationaliteit>BELG</nationaliteit>
+        <geboorte-datum>1994-09-15</geboorte-datum>
+        <lengte>189</lengte>
+        <gewicht>73.0</gewicht>
+        <ploeg>Veranda's Willems - Crelan</ploeg>
+    </wielRenners>
+    <wielRenners discipline="MTB">
+        <naam>Schurter</naam>
+        <voornaam>Nino</voornaam>
+        <nationaliteit>ZWITSER</nationaliteit>
+        <geboorte-datum>1986-05-13</geboorte-datum>
+        <lengte>173</lengte>
+        <gewicht>66.0</gewicht>
+        <ploeg>Scott - SRAM</ploeg>
+    </wielRenners>
+    <wielRenners discipline="MTB">
+        <naam>Kulhavý</naam>
+        <voornaam>Jaroslav</voornaam>
+        <nationaliteit>TJSECHS</nationaliteit>
+        <geboorte-datum>1985-01-08</geboorte-datum>
+        <lengte>187</lengte>
+        <gewicht>76.0</gewicht>
+        <ploeg>Specialized Factory Racing</ploeg>
+    </wielRenners>
+    <wielRenners discipline="MTB">
+        <naam>Fumic</naam>
+        <voornaam>Manuel</voornaam>
+        <nationaliteit>DUITS</nationaliteit>
+        <geboorte-datum>1982-03-30</geboorte-datum>
+        <lengte>174</lengte>
+        <gewicht>65.0</gewicht>
+        <ploeg>Cannondale Factory Racing</ploeg>
+    </wielRenners>
+    <wielRenners discipline="BMX">
+        <naam>Evans</naam>
+        <voornaam>Kyle</voornaam>
+        <nationaliteit>BRIT</nationaliteit>
+        <geboorte-datum>1993-09-26</geboorte-datum>
+        <lengte>180</lengte>
+        <gewicht>81.0</gewicht>
+        <ploeg>BTech</ploeg>
+    </wielRenners>
+    <wielRenners discipline="PISTE">
+        <naam>Glaetzer</naam>
+        <voornaam>Matthew</voornaam>
+        <nationaliteit>AUSTRALISCH</nationaliteit>
+        <geboorte-datum>1992-08-24</geboorte-datum>
+        <lengte>190</lengte>
+        <gewicht>86.0</gewicht>
+        <ploeg>Australian National Team</ploeg>
+    </wielRenners>
+    <wielRenners discipline="RACE">
+        <naam>Greipel</naam>
+        <voornaam>André</voornaam>
+        <nationaliteit>DUITS</nationaliteit>
+        <geboorte-datum>1982-07-16</geboorte-datum>
+        <lengte>184</lengte>
+        <gewicht>82.0</gewicht>
+        <ploeg>Lotto Soudal</ploeg>
+    </wielRenners>
+    <wielRenners discipline="CYCLOCROSS">
+        <naam>van der Poel</naam>
+        <voornaam>Mathieu</voornaam>
+        <nationaliteit>NEDERLANDS</nationaliteit>
+        <geboorte-datum>1995-01-19</geboorte-datum>
+        <lengte>182</lengte>
+        <gewicht>67.0</gewicht>
+        <ploeg>Corendon Circus</ploeg>
+    </wielRenners>
+    <wielRenners discipline="RACE">
+        <naam>Cavendish</naam>
+        <voornaam>Marc</voornaam>
+        <nationaliteit>BRIT</nationaliteit>
+        <geboorte-datum>1985-05-21</geboorte-datum>
+        <lengte>175</lengte>
+        <gewicht>75.0</gewicht>
+        <ploeg>Team Dimension Data</ploeg>
+    </wielRenners>
+    <wielRenners discipline="RACE">
+        <naam>Kristoff</naam>
+        <voornaam>Alexander</voornaam>
+        <nationaliteit>NOORS</nationaliteit>
+        <geboorte-datum>1987-07-05</geboorte-datum>
+        <lengte>181</lengte>
+        <gewicht>78.0</gewicht>
+        <ploeg>UAE Team Emirates</ploeg>
+    </wielRenners>
+    <wielRenners discipline="CYCLOCROSS">
+        <naam>Pauwels</naam>
+        <voornaam>Kevin</voornaam>
+        <nationaliteit>BELG</nationaliteit>
+        <geboorte-datum>1984-04-12</geboorte-datum>
+        <lengte>175</lengte>
+        <gewicht>60.0</gewicht>
+        <ploeg>Marlux Napoleon Games</ploeg>
+    </wielRenners>
+    <wielRenners discipline="CYCLOCROSS">
+        <naam>van der Haar</naam>
+        <voornaam>Lars</voornaam>
+        <nationaliteit>NEDERLANDS</nationaliteit>
+        <geboorte-datum>1991-07-23</geboorte-datum>
+        <lengte>169</lengte>
+        <gewicht>58.0</gewicht>
+        <ploeg>Telenet Fidea Lions</ploeg>
+    </wielRenners>
+</wielRenners>

@@ -1,0 +1,1 @@
+java -classpath "lib/hsqldb 2.4.0.jar" org.hsqldb.server.Server --database.0 file:data/studenten --dbname.0 studenten

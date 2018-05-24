@@ -1,0 +1,228 @@
+{
+  "wielRenners": [
+    {
+      "naam": "Benoot",
+      "voornaam": "Tiesj",
+      "nationaliteit": "BELG",
+      "geboorteDatum": {
+        "year": 1994,
+        "month": 3,
+        "day": 11
+      },
+      "lengte": 190,
+      "gewicht": 72.0,
+      "ploeg": "Lotto Soudal",
+      "discipline": "RACE"
+    },
+    {
+      "naam": "Wellens",
+      "voornaam": "Tim",
+      "nationaliteit": "BELG",
+      "geboorteDatum": {
+        "year": 1991,
+        "month": 5,
+        "day": 10
+      },
+      "lengte": 183,
+      "gewicht": 65.0,
+      "ploeg": "Lotto Soudal",
+      "discipline": "RACE"
+    },
+    {
+      "naam": "Zdeněk",
+      "voornaam": "Štybar",
+      "nationaliteit": "TJSECHS",
+      "geboorteDatum": {
+        "year": 1985,
+        "month": 12,
+        "day": 11
+      },
+      "lengte": 183,
+      "gewicht": 78.0,
+      "ploeg": "Quick-Step Floors",
+      "discipline": "RACE"
+    },
+    {
+      "naam": "Sagan",
+      "voornaam": "Peter",
+      "nationaliteit": "SLOWAAKS",
+      "geboorteDatum": {
+        "year": 1990,
+        "month": 1,
+        "day": 26
+      },
+      "lengte": 184,
+      "gewicht": 73.0,
+      "ploeg": "BORA - Hansgrohe",
+      "discipline": "RACE"
+    },
+    {
+      "naam": "Van Aert",
+      "voornaam": "Wout",
+      "nationaliteit": "BELG",
+      "geboorteDatum": {
+        "year": 1994,
+        "month": 9,
+        "day": 15
+      },
+      "lengte": 189,
+      "gewicht": 73.0,
+      "ploeg": "Veranda\u0027s Willems - Crelan",
+      "discipline": "CYCLOCROSS"
+    },
+    {
+      "naam": "Schurter",
+      "voornaam": "Nino",
+      "nationaliteit": "ZWITSER",
+      "geboorteDatum": {
+        "year": 1986,
+        "month": 5,
+        "day": 13
+      },
+      "lengte": 173,
+      "gewicht": 66.0,
+      "ploeg": "Scott - SRAM",
+      "discipline": "MTB"
+    },
+    {
+      "naam": "Kulhavý",
+      "voornaam": "Jaroslav",
+      "nationaliteit": "TJSECHS",
+      "geboorteDatum": {
+        "year": 1985,
+        "month": 1,
+        "day": 8
+      },
+      "lengte": 187,
+      "gewicht": 76.0,
+      "ploeg": "Specialized Factory Racing",
+      "discipline": "MTB"
+    },
+    {
+      "naam": "Fumic",
+      "voornaam": "Manuel",
+      "nationaliteit": "DUITS",
+      "geboorteDatum": {
+        "year": 1982,
+        "month": 3,
+        "day": 30
+      },
+      "lengte": 174,
+      "gewicht": 65.0,
+      "ploeg": "Cannondale Factory Racing",
+      "discipline": "MTB"
+    },
+    {
+      "naam": "Evans",
+      "voornaam": "Kyle",
+      "nationaliteit": "BRIT",
+      "geboorteDatum": {
+        "year": 1993,
+        "month": 9,
+        "day": 26
+      },
+      "lengte": 180,
+      "gewicht": 81.0,
+      "ploeg": "BTech",
+      "discipline": "BMX"
+    },
+    {
+      "naam": "Glaetzer",
+      "voornaam": "Matthew",
+      "nationaliteit": "AUSTRALISCH",
+      "geboorteDatum": {
+        "year": 1992,
+        "month": 8,
+        "day": 24
+      },
+      "lengte": 190,
+      "gewicht": 86.0,
+      "ploeg": "Australian National Team",
+      "discipline": "PISTE"
+    },
+    {
+      "naam": "Greipel",
+      "voornaam": "André",
+      "nationaliteit": "DUITS",
+      "geboorteDatum": {
+        "year": 1982,
+        "month": 7,
+        "day": 16
+      },
+      "lengte": 184,
+      "gewicht": 82.0,
+      "ploeg": "Lotto Soudal",
+      "discipline": "RACE"
+    },
+    {
+      "naam": "van der Poel",
+      "voornaam": "Mathieu",
+      "nationaliteit": "NEDERLANDS",
+      "geboorteDatum": {
+        "year": 1995,
+        "month": 1,
+        "day": 19
+      },
+      "lengte": 182,
+      "gewicht": 67.0,
+      "ploeg": "Corendon Circus",
+      "discipline": "CYCLOCROSS"
+    },
+    {
+      "naam": "Cavendish",
+      "voornaam": "Marc",
+      "nationaliteit": "BRIT",
+      "geboorteDatum": {
+        "year": 1985,
+        "month": 5,
+        "day": 21
+      },
+      "lengte": 175,
+      "gewicht": 75.0,
+      "ploeg": "Team Dimension Data",
+      "discipline": "RACE"
+    },
+    {
+      "naam": "Kristoff",
+      "voornaam": "Alexander",
+      "nationaliteit": "NOORS",
+      "geboorteDatum": {
+        "year": 1987,
+        "month": 7,
+        "day": 5
+      },
+      "lengte": 181,
+      "gewicht": 78.0,
+      "ploeg": "UAE Team Emirates",
+      "discipline": "RACE"
+    },
+    {
+      "naam": "Pauwels",
+      "voornaam": "Kevin",
+      "nationaliteit": "BELG",
+      "geboorteDatum": {
+        "year": 1984,
+        "month": 4,
+        "day": 12
+      },
+      "lengte": 175,
+      "gewicht": 60.0,
+      "ploeg": "Marlux Napoleon Games",
+      "discipline": "CYCLOCROSS"
+    },
+    {
+      "naam": "van der Haar",
+      "voornaam": "Lars",
+      "nationaliteit": "NEDERLANDS",
+      "geboorteDatum": {
+        "year": 1991,
+        "month": 7,
+        "day": 23
+      },
+      "lengte": 169,
+      "gewicht": 58.0,
+      "ploeg": "Telenet Fidea Lions",
+      "discipline": "CYCLOCROSS"
+    }
+  ]
+}

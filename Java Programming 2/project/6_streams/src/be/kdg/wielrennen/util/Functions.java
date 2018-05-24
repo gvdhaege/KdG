@@ -16,7 +16,10 @@ public class Functions {
     }
 
     public static <T> Double averageCollection(Collection<T> wielrennerLijst, ToDoubleFunction<T> mapper) {
-        return wielrennerLijst.stream().mapToDouble(mapper).sum() / wielrennerLijst.size();
+        return wielrennerLijst
+                .stream()
+                .mapToDouble(mapper)
+                .sum() / wielrennerLijst.size();
     }
 
     public static <T> long countIf(Collection<T> wielrennerLijst, Predicate<T> predicate) {

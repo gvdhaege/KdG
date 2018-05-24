@@ -1,0 +1,4 @@
+/*C4*/SET SCHEMA PUBLIC
+DROP TABLE wielrenners IF EXISTS
+CREATE TABLE wielrenners (id INTEGER IDENTITY, naam VARCHAR(25) NOT NULL, voornaam VARCHAR(20) NOT NULL, nationaliteit VARCHAR(20) NOT NULL, geboortedatum DATE, lengte INTEGER, gewicht DOUBLE, ploeg VARCHAR(30), discipline VARCHAR(15))
+DISCONNECT
