@@ -1,6 +1,5 @@
 package be.kdg.wielrennen.persist;
 
-import be.kdg.wielrennen.data.Data;
 import be.kdg.wielrennen.model.Discipline;
 import be.kdg.wielrennen.model.WielRenner;
 import be.kdg.wielrennen.model.WielRenners;
@@ -55,103 +54,140 @@ public class WielRennerDbDao implements WielRennerDao {
         }
     }
 
-    public void vulTabel() {
-
-        try (PreparedStatement statement = connection.prepareStatement(
-                "INSERT INTO wielrenners (" +
-                        "id, naam, voornaam, nationaliteit, geboortedatum, lengte, gewicht, ploeg, discipline)" +
-                        "VALUES(NULL, ?,?,?,?,?,?,?,?)")) {
-
-            for (WielRenner wielRenner : Data.getData()) {
-                statement.setString(1, wielRenner.getNaam());
-                statement.setString(2, wielRenner.getVoornaam());
-                statement.setString(3, wielRenner.getNationaliteit());
-                statement.setDate(4, Date.valueOf(wielRenner.getGeboorteDatum()));
-                statement.setInt(5, wielRenner.getLengte());
-                statement.setDouble(6, wielRenner.getGewicht());
-                statement.setString(7, wielRenner.getPloeg());
-                statement.setString(8, wielRenner.getDiscipline().name());
-                statement.executeUpdate();
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-    }
-
-    public List<WielRenner> zoekTabel() {
-        List<WielRenner> dbLijst = new ArrayList<>();
-        try (Statement statement = connection.createStatement()) {
-            ResultSet resultSet = statement.executeQuery("SELECT * FROM wielrenners");
-            while (resultSet.next()) {
-                WielRenner wielRenner = new WielRenner(
-                        resultSet.getInt("id"),
-                        resultSet.getString("naam"),
-                        resultSet.getString("voornaam"),
-                        resultSet.getString("nationaliteit"),
-                        resultSet.getDate("geboortedatum").toLocalDate(),
-                        resultSet.getInt("lengte"),
-                        resultSet.getDouble("gewicht"),
-                        resultSet.getString("ploeg"),
-                        Discipline.valueOf(resultSet.getString("discipline")));
-                dbLijst.add(wielRenner);
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        return Collections.unmodifiableList(dbLijst);
-    }
-
-    public boolean updateTabel(WielRenner wielRenner) {
+    public void update(WielRenner wielRenner) {
         try (PreparedStatement statement = connection.prepareStatement("SELECT * FROM wielrenners WHERE id = ?")) {
             statement.setInt(1, wielRenner.getId());
             ResultSet resultSet = statement.executeQuery();
 
             if (resultSet.next()) {
-                //TODO update wielrenner
-                return true;
+                PreparedStatement updateStatement = connection.prepareStatement(
+                        "UPDATE wielrenners SET naam = ?, " +
+                                "voornaam = ?, " +
+                                "nationaliteit = ?, " +
+                                "geboortedatum = ?, " +
+                                "lengte = ?, " +
+                                "gewicht = ?, " +
+                                "ploeg = ?, " +
+                                "discipline = ? " +
+                                "WHERE id = ?");
+                updateStatement.setString(1, wielRenner.getNaam());
+                updateStatement.setString(2, wielRenner.getVoornaam());
+                updateStatement.setString(3, wielRenner.getNationaliteit());
+                updateStatement.setDate(4, Date.valueOf(wielRenner.getGeboorteDatum()));
+                updateStatement.setInt(5, wielRenner.getLengte());
+                updateStatement.setDouble(6, wielRenner.getGewicht());
+                updateStatement.setString(7, wielRenner.getPloeg());
+                updateStatement.setString(8, wielRenner.getDiscipline().name());
+                updateStatement.setInt(9, wielRenner.getId());
+                updateStatement.executeUpdate();
             }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+
+    @Override
+    public boolean voegToe(WielRenner wielRenner) {
+        try (PreparedStatement statement = connection.prepareStatement(
+                "INSERT INTO wielrenners (" +
+                        "id, naam, voornaam, nationaliteit, geboortedatum, lengte, gewicht, ploeg, discipline)" +
+                        "VALUES(NULL, ?,?,?,?,?,?,?,?)")) {
+
+            statement.setString(1, wielRenner.getNaam());
+            statement.setString(2, wielRenner.getVoornaam());
+            statement.setString(3, wielRenner.getNationaliteit());
+            statement.setDate(4, Date.valueOf(wielRenner.getGeboorteDatum()));
+            statement.setInt(5, wielRenner.getLengte());
+            statement.setDouble(6, wielRenner.getGewicht());
+            statement.setString(7, wielRenner.getPloeg());
+            statement.setString(8, wielRenner.getDiscipline().name());
+            statement.executeUpdate();
+            return true;
         } catch (SQLException e) {
             e.printStackTrace();
         }
         return false;
     }
 
-    public void verwijderWielrenners() {
-        try (Statement statement = connection.createStatement()) {
-            String delete = "DELETE FROM wielrenners";
-            statement.execute(delete);
+    @Override
+    public boolean verwijder(String naam, String voornaam) {
+        try (PreparedStatement statement = connection.prepareStatement(
+                "DELETE FROM wielrenners WHERE naam = ? AND voornaam = ?")) {
+            statement.setString(1, naam);
+            statement.setString(2, voornaam);
+            statement.execute();
+            return true;
         } catch (SQLException e) {
             e.printStackTrace();
         }
-    }
-
-    @Override
-    public boolean voegToe(WielRenner wielRenner) {
-        return wielRenners.voegToe(wielRenner);
-    }
-
-    @Override
-    public boolean verwijder(String naam, String voornaam) {
-        return wielRenners.verwijder(naam, voornaam);
+        return false;
     }
 
     @Override
     public WielRenner zoek(String naam, String voornaam) {
-        return wielRenners.zoek(naam, voornaam);
+        try (Statement statement = connection.createStatement()) {
+            ResultSet result = statement.executeQuery(
+                    "SELECT * FROM wielrenners WHERE naam = '" + naam + "' AND voornaam = '" + voornaam + "'");
+
+            if (result.next()) {
+                return new WielRenner(
+                        result.getInt("id"),
+                        result.getString("naam"),
+                        result.getString("voornaam"),
+                        result.getString("nationaliteit"),
+                        result.getDate("geboortedatum").toLocalDate(),
+                        result.getInt("lengte"),
+                        result.getDouble("gewicht"),
+                        result.getString("ploeg"),
+                        Discipline.valueOf(result.getString("discipline")));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     @Override
     public List<WielRenner> sorteerOpNationaliteit() {
-        return wielRenners.sorteerOpNationaliteit();
+        return voerQueryUit("SELECT * FROM wielrenners ORDER BY nationaliteit ASC");
     }
 
     @Override
     public List<WielRenner> sorteerOpGewicht() {
-        return wielRenners.sorteerOpGewicht();
+        return voerQueryUit("SELECT * FROM wielrenners ORDER BY gewicht ASC");
     }
 
     @Override
     public List<WielRenner> sorteerOpLengte() {
-        return wielRenners.sorteerOpLengte();
+        return voerQueryUit("SELECT * FROM wielrenners ORDER BY lengte ASC");
+    }
+
+    public List<WielRenner> gefilterdOp(String conditie) {
+        return voerQueryUit("SELECT * FROM wielrenners WHERE " + conditie);
+    }
+
+    private List<WielRenner> voerQueryUit(String query) {
+        List<WielRenner> wielrenners = new ArrayList<>();
+
+        try (Statement statement = connection.createStatement()) {
+            ResultSet result = statement.executeQuery(query);
+            while (result.next()) {
+                WielRenner wielRenner = new WielRenner(
+                        result.getInt("id"),
+                        result.getString("naam"),
+                        result.getString("voornaam"),
+                        result.getString("nationaliteit"),
+                        result.getDate("geboortedatum").toLocalDate(),
+                        result.getInt("lengte"),
+                        result.getDouble("gewicht"),
+                        result.getString("ploeg"),
+                        Discipline.valueOf(result.getString("discipline")));
+                wielrenners.add(wielRenner);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return Collections.unmodifiableList(wielrenners);
     }
 }

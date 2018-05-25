@@ -1,7 +1,11 @@
 package be.kdg.wielrennen.model;
 
 import java.util.*;
-
+/**
+ * MULTIKLASSE
+ * STUDENT: Steven Excelmans
+ * klasgroep: TIB001B
+ */
 public class WielRenners {
     private TreeSet<WielRenner> wielRenners;
 

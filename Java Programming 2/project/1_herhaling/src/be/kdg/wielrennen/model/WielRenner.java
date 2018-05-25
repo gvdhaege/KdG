@@ -5,6 +5,11 @@ import java.time.format.DateTimeFormatter;
 import java.util.Comparator;
 import java.util.Objects;
 
+/**
+ * BASISKLASSE
+ * STUDENT: Steven Excelmans
+ * klasgroep: TIB001B
+ */
 public class WielRenner implements Comparable<be.kdg.wielrennen.model.WielRenner> {
     private static final String ONGEKEND = "Ongekend";
     private String naam;
