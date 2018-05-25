@@ -11,8 +11,6 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class Demo_10 {
-    private final static double TEST_RUNS = 100;
-
     public static void main(String[] args) {
         //opdracht 3.3
         List<WielRenner> wielRenners = Stream
@@ -56,7 +54,5 @@ public class Demo_10 {
         System.out.printf("\n<%d> aantal wielrenners boven de 70kg", wielRenners.stream().filter(gewichtPredicate).count());
         System.out.printf("\n<%d> aantal wielrenners met Cyclocross als discipline", wielRenners.stream().filter(disciplinePredicate).count());
         System.out.printf("\n<%d> aantal wielrenners groter dan 200cm\n", wielRenners.stream().filter(lengtePredicate).count());
-
-
     }
 }

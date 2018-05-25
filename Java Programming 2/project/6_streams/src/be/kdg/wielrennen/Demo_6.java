@@ -11,6 +11,7 @@ import java.util.stream.Collectors;
 
 public class Demo_6 {
     public static void main(String[] args) {
+        //opdracht 2.4
         List<WielRenner> data = Data.getData();
         WielRenners wielRenners = new WielRenners();
 
@@ -41,6 +42,7 @@ public class Demo_6 {
         System.out.println("Wielrenners gefilterd op gewicht lichter dan 70kg:");
         filteredOpGewicht.forEach(System.out::println);
 
+        //opdracht 2.6
         System.out.println();
         Double gemiddeldeLengte = Functions.averageCollection(data, WielRenner::getLengte);
         System.out.printf("Wielrenners gemiddelde lengte: %.1f", gemiddeldeLengte);
@@ -49,6 +51,7 @@ public class Demo_6 {
         Double gemiddeldGewicht = Functions.averageCollection(data, WielRenner::getGewicht);
         System.out.printf("Wielrenners gemiddeld gewicht: %.1f", gemiddeldGewicht);
 
+        //opdracht 2.8
         System.out.println();
         long aantalLottoSoudal = Functions.countIf(data, wielRenner -> wielRenner.getPloeg().equalsIgnoreCase("Lotto Soudal"));
         System.out.printf("Aantal wielrenners Lotto Soudal: %d", aantalLottoSoudal);
@@ -57,6 +60,7 @@ public class Demo_6 {
         long aantalBelgen = Functions.countIf(data, wielRenner -> wielRenner.getNationaliteit().equalsIgnoreCase("BELG"));
         System.out.printf("Aantal Belgische wielrenners: %d", aantalBelgen);
 
+        //opdracht 3.1
         System.out.println();
         Long geborenNa1990 = data
                 .stream()
@@ -64,12 +68,14 @@ public class Demo_6 {
                 .count();
         System.out.println("Aantal wielrenners geboren na 1990: " + geborenNa1990);
 
+        //opdracht 3.2
         System.out.println("\nWielrenners gesorteerd op nationaliteit, vervolgens op gewicht:");
         data
                 .stream()
                 .sorted(Comparator.comparing(WielRenner::getNationaliteit).thenComparing(WielRenner::getGewicht))
                 .forEach(System.out::println);
 
+        //opdracht 3.3
         String nationaliteiten = data
                 .stream()
                 .map(WielRenner::getNationaliteit)
@@ -77,7 +83,6 @@ public class Demo_6 {
                 .sorted(Collections.reverseOrder())
                 .collect(Collectors.joining(", "));
         System.out.println("\nAlle ploegen in hoofdletters, omgekeerd gesorteerd en zonder dubbels: " + nationaliteiten);
-
 
         //opdracht 3.4
         Optional<WielRenner> anyWielRenner = data.stream()

@@ -2,14 +2,14 @@
 <!DOCTYPE log SYSTEM "logger.dtd">
 <log>
 <record>
-  <date>2018-05-23T09:15:28</date>
-  <millis>1527059728037</millis>
+  <date>2018-05-25T09:54:03</date>
+  <millis>1527234843267</millis>
   <sequence>0</sequence>
   <logger>be.kdg.wielrennen.model.WielRenner</logger>
   <level>SEVERE</level>
   <class>be.kdg.wielrennen.model.WielRenner</class>
-  <method>setGewicht</method>
+  <method>setGeboorteDatum</method>
   <thread>1</thread>
-  <message>Gewicht 180 ligt niet tussen 20 en 150 voor Anoniem Anoniem</message>
+  <message>Geboortedatum 2018-05-25 ligt niet in het verleden voor Ongekend Ongekend</message>
 </record>
 </log>

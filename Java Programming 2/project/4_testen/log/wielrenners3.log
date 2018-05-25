@@ -2,14 +2,14 @@
 <!DOCTYPE log SYSTEM "logger.dtd">
 <log>
 <record>
-  <date>2018-05-23T09:15:23</date>
-  <millis>1527059723438</millis>
+  <date>2018-05-25T09:53:42</date>
+  <millis>1527234822547</millis>
   <sequence>0</sequence>
   <logger>be.kdg.wielrennen.model.WielRenner</logger>
   <level>SEVERE</level>
   <class>be.kdg.wielrennen.model.WielRenner</class>
-  <method>setGewicht</method>
+  <method>setLengte</method>
   <thread>1</thread>
-  <message>Gewicht 180 ligt niet tussen 20 en 150 voor Anoniem Anoniem</message>
+  <message>Lengte 300 ligt niet tussen 50 en 250cm voor Ongekend Ongekend</message>
 </record>
 </log>

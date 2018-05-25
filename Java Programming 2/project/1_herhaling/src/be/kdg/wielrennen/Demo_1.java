@@ -9,7 +9,9 @@ import java.time.LocalDate;
 import java.util.List;
 
 public class Demo_1 {
+
     public static void main(String[] args) {
+        //opdracht 4.2
         List<WielRenner> data = Data.getData();
         WielRenners wielRenners = new WielRenners();
 

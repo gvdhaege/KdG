@@ -13,6 +13,7 @@ import java.util.List;
 
 public class Demo_5 {
     public static void main(String[] args) {
+        //opdracht 2.4 & 2.5
         ObservableWielRenners observableWielRenners = new ObservableWielRenners(new WielRenners());
         WielRennersObserver wielRennersObserver = new WielRennersObserver(observableWielRenners);
         observableWielRenners.addObserver(wielRennersObserver);
@@ -30,6 +31,7 @@ public class Demo_5 {
         observableWielRenners.verwijder("van der Haar", "Lars");
         System.out.println("Aantal wielrenners na verwijderen: " + observableWielRenners.getAantal() + "\n");
 
+        //opdracht 3.3 & 3.4
         System.out.println("Willekeurig gegenereerde wielrenners: ");
         observableWielRenners.voegToe(WielRennerFactory.newEmptyWielRenner());
         observableWielRenners.voegToe(WielRennerFactory.newRandomWielRenner());
@@ -43,8 +45,7 @@ public class Demo_5 {
         observableWielRenners.voegToe(WielRennerFactory.newRandomWielRenner());
         observableWielRenners.voegToe(WielRennerFactory.newRandomWielRenner());
 
-
-        //PROTECTION PROXY
+        //opdracht 4.2
         UnmodifiableWielRenners unmodifiableWielRenners = new UnmodifiableWielRenners(new WielRenners());
 
 //        unmodifiableWielRenners.voegToe(WielRennerFactory.newFilledWielRenner("van der Haar", "Lars", "NEDERLANDS",
